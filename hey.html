@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impress Massoma</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container Styling */
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        /* Extra Message Styling */
+        .extra-message {
+            font-size: 1.3rem;
+            color: #e67e22;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Poetry Styling */
+        .poetry {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .poetry p {
+            margin: 10px 0;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Sorry Message Styling */
+        .sorry-message {
+            display: none;
+            font-size: 1.2rem;
+            color: #e74c3c;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f2d7d5;
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>yr ya tumharay liya </h1>
+
+    <!-- Extra message before the poetry -->
+    <div class="extra-message">
+        kal maybe tumhara mari waja sy mood<br> 
+    </div>
+
+    <!-- Poetry Section -->
+    <div class="poetry">
+        <p>There’s something special in your smile,</p>
+        <p>It gives peace to the heart, it’s the heart's delight.</p>
+        <p>In your friendship, there’s the fragrance of love,</p>
+        <p>It makes life beautiful, it’s the greatest blessing from above.</p>
+
+        <p>In your words, there’s always something sweet,</p>
+        <p>That reaches the depths of the heart, a hidden scent so neat.</p>
+        <p>With your presence, every moment becomes bright,</p>
+        <p>With your smile, every day feels light and right.</p>
+    </div>
+
+    <!-- Sorry Button -->
+    <button id="sorryButton">is ko click karo </button>
+
+    <!-- Sorry Message -->
+    <div id="sorryMessage" class="sorry-message">
+       
+       <p>
+        <p>جب تم ساتھ ہوتی ہو سکوں ہوتا ہوں</p>
+        <p>تمہارے بغیر ہر لمحہ غم ہوتا ہوں</p>
+        <p>تمہاری مسکراہٹ میں جو راز چھپے ہیں</p>
+        <p>وہی دل کی تسکین کا آغاز ہوتے ہیں</p>
+        <p>تم ناراض ہوتی ہو، کچھ بھی نہیں ہوتا</p>
+        <p>دنیا میں پھر بھی کوئی مزا نہیں ہوتا</p>
+        <p>جب تم ساتھ ہوتی ہو، دل خوش ہو جاتا ہے</p>
+        <p>تمہاری موجودگی سے ہر لمحہ جگمگاتا ہے</p>
+       </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        ya tumharay liya masooma! 😊
+    </div>
+</div>
+
+<script>
+    // JavaScript to show the sorry message when the "Sorry" button is clicked
+    document.getElementById('sorryButton').addEventListener('click', function() {
+        var sorryMessage = document.getElementById('sorryMessage');
+        sorryMessage.style.display = 'block'; // Show the sorry message
+        this.style.display = 'none'; // Hide the "Sorry" button
+    });
+</script>
+
+</body>
+</html>
